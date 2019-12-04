@@ -6,104 +6,129 @@
 
 ![Thumbnail of Cayman](thumbnail.png)
 
-## Usage
+# OpenAPI Specification Files for 3GPP 5G Core Network (Release 15)
 
-To use the Cayman theme:
+[![Build Status](https://travis-ci.org/jdegre/5GC_APIs_RELEASE_15.svg?branch=master)](https://travis-ci.org/jdegre/5GC_APIs_RELEASE_15)
 
-1. Add the following to your site's `_config.yml`:
-
-    ```yml
-    theme: jekyll-theme-cayman
-    ```
-
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
-
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
-
-## Customizing
-
-### Configuration variables
-
-Cayman will respect the following variables, if set in your site's `_config.yml`:
-
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
+The files in this repository have been created by 3GPP, and the master source can be found in the [3GPP site](http://www.3gpp.org/DynaReport/23-series.htm), as part of the official 3GPP Technical Specifications.
 ```
-
-Additionally, you may choose to set the following optional variables:
-
-```yml
-show_downloads: ["true" or "false" to indicate whether to provide a download URL]
-google_analytics: [Your Google Analytics tracking ID]
+© 2019, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI, TTA, TTC).
+All rights reserved.
 ```
+API version: **September 2019**<br/>
+Release status: **Frozen** <sup>&#x1F512;</sup><br/>
+Other releases: [Rel-16 (Open)](https://zakirhussain.github.io/5GC_APIs/)<br/>
+- [Info about 3GPP Releases and their status](https://www.3gpp.org/specifications/67-releases)
+<br/><br/>
 
-### Stylesheet
 
-If you'd like to add your own custom styles:
+The links below will open the Swagger Editor (v3.6.23) and auto-load the OpenAPI YAML file of each Network Function (NF) API:
+<br/>
 
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-    ```scss
-    ---
-    ---
+<!-- APIs -->
 
-    @import "{{ site.theme }}";
-    ```
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
+## NRF (NF Repository Function)
+* [NF Management](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29510_Nnrf_NFManagement.yaml)
+* [NF Discovery](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29510_Nnrf_NFDiscovery.yaml)
+* [Access Token (OAuth2)](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29510_Nnrf_AccessToken.yaml)
 
-*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
+## LMF (Location Management Function)
+* [Location](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29572_Nlmf_Location.yaml)
 
-### Layouts
+## AMF (Access and Mobility Management Function)
+* [Communication](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29518_Namf_Communication.yaml)
+* [Event Exposure](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29518_Namf_EventExposure.yaml)
+* [Location](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29518_Namf_Location.yaml)
+* [MT](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29518_Namf_MT.yaml)
 
-If you'd like to change the theme's HTML layout:
+## SMF (Session Management Function)
+* [PDU Session](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29502_Nsmf_PDUSession.yaml)
+* [Event Exposure](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29508_Nsmf_EventExposure.yaml)
 
-1. [Copy the original template](https://github.com/pages-themes/cayman/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
-2. Create a file called `/_layouts/default.html` in your site
-3. Paste the default layout content copied in the first step
-4. Customize the layout as you'd like
+## UDM (Unified Data Management)
+* [Subscriber Data Management](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29503_Nudm_SDM.yaml)
+* [UE Context Management](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29503_Nudm_UECM.yaml)
+* [UE Authentication](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29503_Nudm_UEAU.yaml)
+* [Event Exposure](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29503_Nudm_EE.yaml)
+* [Parameter Provisioning](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29503_Nudm_PP.yaml)
 
-### Overriding GitHub-generated URLs
+## UDR (Unified Data Repository)
+* [Data Repository](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29504_Nudr_DataRepository.yaml)
+* [Subscription Data](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29505_Subscription_Data.yaml)
+* [Policy Data](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29519_Policy_Data.yaml)
+* [Exposure Data](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29519_Exposure_Data.yaml)
+* [Application Data](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29519_Application_Data.yaml)
 
-Templates often rely on URLs supplied by GitHub such as links to your repository or links to download your project. If you'd like to override one or more default URLs:
+## AUSF (Authentication Server Function)
+* [UE Authentication](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29509_Nausf_UEAuthentication.yaml)
+* [SoR (Steering of Roaming) Protection](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29509_Nausf_SoRProtection.yaml)
+* [UPU (UE Parameter Update) Protection](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29509_Nausf_UPUProtection.yaml)
 
-1. Look at [the template source](https://github.com/pages-themes/cayman/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
-2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
-    ```yml
-    github:
-      zip_url: http://example.com/download.zip
-      another_url: another value
-    ```
-3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
+## NSSF (Network Slice Selection Function)
+* [NSSAI Availability](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29531_Nnssf_NSSAIAvailability.yaml)
+* [NS Selection](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29531_Nnssf_NSSelection.yaml)
 
-*Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`.*
+## SMSF (SMS Function)
+* [SM Service](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29540_Nsmsf_SMService.yaml)
 
-For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
+## 5G-EIR (5G Equipment Identity Register)
+* [Equipment Identity Check](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29511_N5g-eir_EquipmentIdentityCheck.yaml)
 
-## Roadmap
+## PCF (Policy Control Function)
+* [Policy Authorization](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29514_Npcf_PolicyAuthorization.yaml)
+* [Access and Mobility (AM) Policy Control](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29507_Npcf_AMPolicyControl.yaml)
+* [Session Management (SM) Policy Control](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29512_Npcf_SMPolicyControl.yaml)
+* [Background Data Transfer (BDT) Policy Control](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29554_Npcf_BDTPolicyControl.yaml)
+* [Policy Control Event Exposure](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29523_Npcf_EventExposure.yaml)
+* [UE Policy Control](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29525_Npcf_UEPolicyControl.yaml)
 
-See the [open issues](https://github.com/pages-themes/cayman/issues) for a list of proposed features (and known issues).
+## BSF (Binding Support Function)
+* [Management](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29521_Nbsf_Management.yaml)
 
-## Project philosophy
+## NWDAF (Network Data Analytics Function)
+* [Events Subscription](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29520_Nnwdaf_EventsSubscription.yaml)
+* [Analytics Info](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29520_Nnwdaf_AnalyticsInfo.yaml)
 
-The Cayman theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
+## CHF (Charging Function)
+* [Spending Limit Control](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29594_Nchf_SpendingLimitControl.yaml)
+* [Converged Charging](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS32291_Nchf_ConvergedCharging.yaml)
 
-## Contributing
+## Common Data Types
+* [Common Data](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29571_CommonData.yaml)
 
-Interested in contributing to Cayman? We'd love your help. Cayman is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
+## SEPP N32 APIs
+* [Handshake (N32-c)](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29573_N32_Handshake.yaml)
+* [Forwarding (N32-f)](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29573_JOSEProtectedMessageForwarding.yaml)
 
-### Previewing the theme locally
+# Northbound APIs (CAPIF)
+* [Discover Service](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29222_CAPIF_Discover_Service_API.yaml)
+* [Publish Service](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29222_CAPIF_Publish_Service_API.yaml)
+* [Events](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29222_CAPIF_Events_API.yaml)
+* [API Invoker Management](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29222_CAPIF_API_Invoker_Management_API.yaml)
+* [Security](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29222_CAPIF_Security_API.yaml)
+* [Access Control Policy](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29222_CAPIF_Access_Control_Policy_API.yaml)
+* [Logging API Invocation](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29222_CAPIF_Logging_API_Invocation_API.yaml)
+* [Auditing](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29222_CAPIF_Auditing_API.yaml)
+* [AEF Authentication](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29222_AEF_Security_API.yaml)
 
-If you'd like to preview the theme locally (for example, in the process of proposing a change):
+# Northbound APIs (T8)
+## NEF (Network Exposure Function)
+* [Traffic Influence](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29522_TrafficInfluence.yaml)
 
-1. Clone down the theme's repository (`git clone https://github.com/pages-themes/cayman`)
-2. `cd` into the theme's directory
-3. Run `script/bootstrap` to install the necessary dependencies
-4. Run `bundle exec jekyll serve` to start the preview server
-5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
-
-### Running tests
-
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.
+## SCEF (Service Capability Exposure Function)
+NOTE: These APIs are not part of the 5G Core Network; these APIs are exposed by the 4G SCEF to the SCS/AS
+* [Event Monitoring](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29122_MonitoringEvent.yaml)
+* [Resource Management of Background Data Transfer (BDT)](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29122_ResourceManagementOfBdt.yaml)
+* [Chargeable Party](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29122_ChargeableParty.yaml)
+* [Non-IP Data Delivery (NIDD)](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29122_NIDD.yaml)
+* [Device Triggering](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29122_DeviceTriggering.yaml)
+* [Group Message Delivery via MBMS by MB2](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29122_GMDviaMBMSbyMB2.yaml)
+* [Group Message Delivery via MBMS by xMB](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29122_GMDviaMBMSbyxMB.yaml)
+* [Network Status Reporting](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29122_ReportingNetworkStatus.yaml)
+* [Communication Patterns (CP) Parameters Provisioning](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29122_CpProvisioning.yaml)
+* [Packet Flow Description (PFD) Management](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29122_PfdManagement.yaml)
+* [Enhanced Coverage Restriction Control](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29122_ECRControl.yaml)
+* [Network Parameter Configuration](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29122_NpConfiguration.yaml)
+* [Application Server (AS) Session with QoS](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29122_AsSessionWithQoS.yaml)
+* [MSISDN-less Mobile-Originated SMS](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29122_MsisdnLessMoSms.yaml)
+* [Common Data](https://editor.swagger.io/?url=https://raw.githubusercontent.com/zakirhussain/5GC_APIs_RELEASE_15/master/TS29122_CommonData.yaml)
